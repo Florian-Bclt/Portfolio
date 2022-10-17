@@ -6,7 +6,7 @@ import HearderSocials from './HearderSocials'
 
 const Header = () => {
   return (
-    <Header>
+    <header>
       <div className="container header__container">
         <h5>Bonjour je suis</h5>
         <h1>Florian Bouclet</h1>
@@ -15,12 +15,12 @@ const Header = () => {
         <HearderSocials />
 
         <div className="me">
-          <img src={ME} alt="Photo de profil" />
+          <img src={ME} alt="profil" />
         </div>
 
         <a href='#contact' className='scroll__down'>Bas de page</a>
       </div>
-    </Header>
+    </header>
   )
 }
 
