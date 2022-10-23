@@ -17,27 +17,23 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Création de maquette personnalisée avec Abobe XD et Figma.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Interface et expérience utilisateur ergonomique et intuitive.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Optimisation du design en respectant la qualité du contenu.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Respect des éléments habituels pour facilier l'UX.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Responsive design avec une approche mobile first.</p>
             </li>
           </ul>
         </article>
@@ -52,19 +48,19 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Intégration web de la maquette réalisée au préalable avec vous.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Réalisation de site dynamique et sécurisé.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Création d'application web avec solution de gestion de contenu pour l'utilisateur.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Création d'API backend en lien avec une base de données.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>

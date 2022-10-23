@@ -13,22 +13,22 @@ import 'swiper/css/pagination';
   const data = [
     {
       avatar: AVATAR1,
-      name: 'Tina Snow',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
+      name: 'Vicky H.',
+      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur fuga dolorem quia fugiat quisquam reiciendis eaque maiores et quae aliquam porro, recusandae exercitationem dolorum tempore voluptates eligendi! Minima, architecto?',
     },
     {
       avatar: AVATAR2,
-      name: 'Shatta Wale',
+      name: 'Stefan S.',
       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
     },
     {
       avatar: AVATAR3,
-      name: 'Kwame Despite',
+      name: 'Josh K.',
       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
     },
     {
       avatar: AVATAR4,
-      name: 'Nana Ama McBrown',
+      name: 'Stephanie L.',
       review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
     },
   ]

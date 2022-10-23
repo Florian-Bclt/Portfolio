@@ -22,7 +22,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className='about_icon'/>
               <h5>Experience</h5>
-              <small>3 ans de travail</small>
+              <small>3 ans de pratique</small>
             </article>
             <article className="about__card">
               <FiUsers className='about_icon'/>
@@ -37,10 +37,13 @@ const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quis in neque, perferendis aut, consectetur iste delectus inventore ullam possimus eligendi adipisci voluptatum repudiandae beatae veniam rerum, nisi enim nihil.
+            Spécialisé en développement frontend, c'est avec rigueur et enthousiasme que je vous accompagnerai dans vos projets
+            personnels selon vos besoins et vos attentes. <br />
+            Création ou mise à jour d'application web ? <br />
+            <b>Vous êtes au bon endroit !</b>
           </p>
 
-          <a href='#contact'className='btn btn-primary'>En savoir +</a>
+          <a href='#contact'className='btn btn-primary'>Parlons-en !</a>
         </div>
       </div>
     </section>
