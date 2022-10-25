@@ -56,7 +56,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Création d'application web avec solution de gestion de contenu pour l'utilisateur.</p>
+              <p>Création de site vitrine.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
@@ -64,11 +64,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Référencement naturel (SEO) pour améliorer la visibilité sur internet.</p>
             </li>
           </ul>
         </article>
@@ -83,27 +79,15 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Blog dynamique et personnalisable avec interface de gestion :
+                <p>Gestion des droits des utilisateurs</p>
+                <p>Plateforme e-commerce</p>
+                <p>Galerie photo</p>
+              </p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list_icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Tableau de bord dynamique distinée aux employeurs avec aperçu globale sur les statistiques.</p>
             </li>
           </ul>
         </article>
