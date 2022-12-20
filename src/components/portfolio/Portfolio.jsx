@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.png'
-import IMG3 from '../../assets/portfolio3.jpg'
+import IMG3 from '../../assets/portfolio7.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
@@ -10,22 +10,22 @@ import IMG6 from '../../assets/portfolio6.jpg'
 const data = [
   {
     id: 1,
+    image: IMG3,
+    title: "Quai Antique - Site de restauration",
+    github: 'https://github.com',
+    demo: 'https://quai-antique.netlify.app/'
+  },
+  {  
+    id: 2,
     image: IMG1,
     title: "Music'en Bray - Site associatif d'une école de musique",
     github: 'https://github.com',
     demo: 'https://music-en-bray.netlify.app/'
   },
-  {  
-    id: 2,
-    image: IMG2,
-    title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
   {
     id: 3,
-    image: IMG3,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
+    image: IMG2,
+    title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
