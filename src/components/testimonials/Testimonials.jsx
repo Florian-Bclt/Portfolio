@@ -14,22 +14,22 @@ import 'swiper/css/pagination';
     {
       avatar: AVATAR1,
       name: 'Vicky H.',
-      review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur fuga dolorem quia fugiat quisquam reiciendis eaque maiores et quae aliquam porro, recusandae exercitationem dolorum tempore voluptates eligendi! Minima, architecto?',
+      review: "Professionnel sérieux et qui s'adapte aux besoins du client. Les designs proposés sont modernes, épurés et le choix des couleurs est agréable pour les yeux. Je recommande Florian pour sa rigueur et son écoute par rapport aux contraintes des métiers.",
     },
     {
       avatar: AVATAR2,
       name: 'Stefan S.',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
+      review: "Si je devais décrire Florian en un mot ? L'écoute ! Lors des nos entretiens il m'a expliqué qu'il était infirmier et ça se ressent dans son travail. Il est rigoureux et sait répondre aux besoins de ses clients en proposant des outils modernes. Je vous le recommande !",
     },
     {
       avatar: AVATAR3,
       name: 'Josh K.',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
+      review: "Très satisfait ! Travail soigné et rapide. Il m'a présenté plusieurs types de projets qui pourraient répondre à ce que je recherchais. Je n'ai pas le temps de me plonger dans l'informatique et il a su me livrer une application de gestion rapide et intuitive.",
     },
     {
       avatar: AVATAR4,
       name: 'Stephanie L.',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel aperiam expedita quo necessitatibus dicta, voluptatibus quas quos asperiores odio iure laudantium laboriosam, omnis culpa soluta? In aliquid tempora laboriosam.',
+      review: "C'est vraiment un plaisir de travailler avec Florian. En plus d'être un bon professionnel, il est souriant et disponible. Ca fait fait du bien de voir qu'il y a encore des gens agréables dans le monde actuel. Je recommande ses services les yeux fermés.",
     },
   ]
 
