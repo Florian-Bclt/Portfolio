@@ -12,22 +12,22 @@ const data = [
     id: 1,
     image: IMG3,
     title: "Quai Antique - Site de restauration",
-    github: 'https://github.com',
+    github: 'https://github.com/Florian-Bclt',
     demo: 'https://quai-antique.netlify.app/'
   },
   {  
     id: 2,
     image: IMG1,
     title: "Music'en Bray - Site associatif d'une école de musique",
-    github: 'https://github.com',
+    github: 'https://github.com/Florian-Bclt',
     demo: 'https://music-en-bray.netlify.app/'
   },
   {
     id: 3,
     image: IMG2,
     title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    github: 'https://github.com/Florian-Bclt',
+    demo: 'https://adminfit.netlify.app/'
   },
   {
     id: 4,
