@@ -21,7 +21,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Interface et expérience utilisateur ergonomique et intuitive.</p>
+              <p>Interface utilisateur ergonomique et intuitive.</p>
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
@@ -87,7 +87,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service__list_icon'/>
-              <p>Tableau de bord dynamique distinée aux employeurs avec aperçu globale sur les statistiques.</p>
+              <p>Tableau de bord dynamique distinée aux administrateurs avec aperçu globale sur les statistiques.</p>
             </li>
           </ul>
         </article>

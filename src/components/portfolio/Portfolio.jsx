@@ -15,12 +15,12 @@ const data = [
     github: 'https://github.com/Florian-Bclt',
     demo: 'https://quai-antique.netlify.app/'
   },
-  {  
+  {
     id: 2,
-    image: IMG1,
-    title: "Music'en Bray - Site associatif d'une école de musique",
-    github: 'https://github.com/Florian-Bclt',
-    demo: 'https://music-en-bray.netlify.app/'
+    image: IMG4,
+    title: 'WeTravel - Agence de voyages',
+    github: 'https://github.com',
+    demo: 'https://www.florianbouclet.go.yj.fr/'
   },
   {
     id: 3,
@@ -29,17 +29,17 @@ const data = [
     github: 'https://github.com/Florian-Bclt',
     demo: 'https://adminfit.netlify.app/'
   },
-  {
+  {  
     id: 4,
-    image: IMG4,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    image: IMG1,
+    title: "Music'en Bray - Site associatif d'une école de musique",
+    github: 'https://github.com/Florian-Bclt',
+    demo: 'https://music-en-bray.netlify.app/'
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
+    title: 'Projet entrainement e-commerce en réalisation avec VueJS',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
