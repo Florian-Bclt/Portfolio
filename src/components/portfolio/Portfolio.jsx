@@ -1,79 +1,116 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {SiReact, SiNestjs, SiGraphql, SiWordpress, SiHtml5, SiCss3, SiJavascript} from 'react-icons/si'
+import {FaVuejs} from 'react-icons/fa'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/portfolio7.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
-
-const data = [
-  {
-    id: 1,
-    image: IMG3,
-    title: "Quai Antique - Site de restauration",
-    github: 'https://github.com/Florian-Bclt',
-    demo: 'https://quai-antique.netlify.app/'
-  },
-  {
-    id: 2,
-    image: IMG4,
-    title: 'WeTravel - Agence de voyages',
-    github: 'https://github.com',
-    demo: 'https://www.florianbouclet.go.yj.fr/'
-  },
-  {
-    id: 3,
-    image: IMG2,
-    title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
-    github: 'https://github.com/Florian-Bclt',
-    demo: 'https://adminfit.netlify.app/'
-  },
-  {  
-    id: 4,
-    image: IMG1,
-    title: "Music'en Bray - Site associatif d'une école de musique",
-    github: 'https://github.com/Florian-Bclt',
-    demo: 'https://music-en-bray.netlify.app/'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Projet entrainement e-commerce en réalisation avec VueJS',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-]
+import IMG6 from '../../assets/dice-roll.png'
 
 const Portfolio = () => {
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      image: IMG3,
+      title: "Quai Antique - Site de restauration",
+      demo: 'https://quai-antique.netlify.app/',
+      technologies: [
+        {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
+        {name: "NestJS", icon: <SiNestjs className='icon nest-icon' />},
+        {name: "GraphQL", icon: <SiGraphql className='icon graphql-icon' />},
+      ],
+      showTechnologies: false
+    },
+    {
+      id: 2,
+      image: IMG4,
+      title: 'WeTravel - Agence de voyages',
+      demo: 'https://www.florianbouclet.go.yj.fr/',
+      technologies: [{name: "WordPress", icon: <SiWordpress className='icon wp-icon' />}],
+      showTechnologies: false
+    },
+    {
+      id: 3,
+      image: IMG2,
+      title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
+      demo: 'https://adminfit.netlify.app/',
+      technologies: [{name: "ReactJS", icon: <SiReact className='icon react-icon' />}],
+      showTechnologies: false
+    },
+    {  
+      id: 4,
+      image: IMG1,
+      title: "Music'en Bray - Site associatif d'une école de musique",
+      demo: 'https://music-en-bray.netlify.app/',
+      technologies: [
+        {name: "HTML", icon: <SiHtml5 className='icon html-icon'/>}, 
+        {name: "CSS", icon: <SiCss3 className='icon css-icon' />}],
+      showTechnologies: false
+    },
+    {
+      id: 5,
+      image: IMG5,
+      title: 'Projet entrainement e-commerce en réalisation avec VueJS',
+      demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
+      technologies: [{name: "VueJS", icon: <FaVuejs className='icon vue-icon' />}],
+      showTechnologies: false
+    },
+    {
+      id: 6,
+      image: IMG6,
+      title: 'Projet Studi - Mini jeu de dés à partir d\'une maquette',
+      demo: 'https://dice-roll-project.netlify.app/',
+      technologies: [
+        {name: "HTML", icon: <SiHtml5 className='icon html-icon'/>}, 
+        {name: "CSS", icon: <SiCss3 className='icon css-icon' />},
+        {name: "JavaScript", icon: <SiJavascript className='icon js-icon'/>},
+      ],
+      showTechnologies: false
+    },
+  ]);
+
+  function handleTechnologiesClick(projectId) {
+    setProjects((prevState) =>
+      prevState.map((project) =>
+        project.id === projectId
+          ? { ...project, showTechnologies: !project.showTechnologies }
+          : project
+      )
+    );
+  }
+
+
   return (
     <section id='portfolio'>
       <h5>Mes projets</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {
-          data.map(({id, image, title, github, demo}) => {
-            return (
-              <article key={id} className='portfolio__item'>
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>            
-              </div>
-            </article>
-            )
-          })
+        {projects.map((project) => (
+          <article key={project.id} className='portfolio__item'>
+            <div className='portfolio__item-image'>
+              <img src={project.image} alt={project.title} />
+            </div>
+            {project.showTechnologies ? (
+              <ul className='project__techno'>
+                {project.technologies.map((technology) => (
+                  <li key={technology.name}>
+                    {technology.icon}
+                    {technology.name}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <h3>{project.title}</h3>         
+            )}
+            <div className='portfolio__item-cta'>
+              <button className='btn__techno' onClick={() => handleTechnologiesClick(project.id)}>Technologies</button>
+              <a href={project.demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Visiter le site</a> 
+            </div>
+          </article>
+        ))
         }
       </div>
     </section>

@@ -30,6 +30,7 @@
 
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
+  height: 6rem;
 }
 
 .portfolio__item-cta {
@@ -37,6 +38,74 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
+.btn__techno {
+  font-weight: 500;
+  font-size: 1em;
+  width: max-content;
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn__techno:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.portfolio__item .project__techno {
+  margin: 1.2rem 0 2rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.react-icon {
+  color: cyan;
+}
+
+.nest-icon {
+  color: red;
+}
+
+.graphql-icon {
+  color: blueviolet;
+}
+
+.wp-icon {
+  color: light;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.html-icon {
+  color: rgb(179, 69, 29);
+}
+
+.css-icon {
+  color:darkcyan;
+}
+
+.vue-icon {
+  color:green;
+}
+
+.js-icon {
+  color:yellow;
+}
+
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 
