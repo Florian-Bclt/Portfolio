@@ -20,12 +20,18 @@
 .portfolio__item-image {
   border-radius: 1.5rem 1.5rem 0 0;
   overflow: hidden;
-  max-height: 220px;
+  height: 210px;
 }
 
+
 .portfolio__item-image img {
-  max-width: 100%;
-  max-height: 100%;
+  object-fit: contain;
+  transition: 0.8s ease-in;
+
+}
+
+.portfolio__item-image img:hover {
+  transform: scale(1.2);
 }
 
 .portfolio__item h3 {
@@ -104,6 +110,10 @@
 
 .js-icon {
   color:yellow;
+}
+
+.redux-icon {
+  color:blueviolet;
 }
 
 

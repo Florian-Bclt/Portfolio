@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {SiReact, SiNestjs, SiGraphql, SiWordpress, SiHtml5, SiCss3, SiJavascript} from 'react-icons/si'
+import {SiReact, SiNestjs, SiGraphql, SiWordpress, SiHtml5, SiCss3, SiJavascript, SiRedux} from 'react-icons/si'
 import {FaVuejs} from 'react-icons/fa'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
@@ -8,6 +8,7 @@ import IMG3 from '../../assets/portfolio7.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/dice-roll.png'
+import IMG7 from '../../assets/ide.jpg'
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([
@@ -33,6 +34,17 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      image: IMG7,
+      title: "theSmartIDE - Editeur de code en ligne",
+      demo: 'https://the-smart-ide.netlify.app/',
+      technologies: [
+        {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
+        {name: "Redux", icon: <SiRedux className='icon redux-icon' />}
+    ],
+      showTechnologies: false
+    },
+    {
+      id: 4,
       image: IMG2,
       title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
       demo: 'https://adminfit.netlify.app/',
@@ -40,7 +52,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {  
-      id: 4,
+      id: 5,
       image: IMG1,
       title: "Music'en Bray - Site associatif d'une école de musique",
       demo: 'https://music-en-bray.netlify.app/',
@@ -50,7 +62,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 5,
+      id: 6,
       image: IMG5,
       title: 'Projet entrainement e-commerce en réalisation avec VueJS',
       demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
@@ -58,7 +70,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 6,
+      id: 7,
       image: IMG6,
       title: 'Projet Studi - Mini jeu de dés à partir d\'une maquette',
       demo: 'https://dice-roll-project.netlify.app/',
