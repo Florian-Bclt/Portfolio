@@ -65,6 +65,28 @@
   border-color: transparent;
 }
 
+.btn__load-more {
+  font-weight: 500;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em auto;
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn__load-more:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
 .portfolio__item .project__techno {
   margin: 1.2rem 0 2rem;
   height: 6rem;

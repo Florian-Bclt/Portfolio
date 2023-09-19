@@ -6,6 +6,12 @@ import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 const About = () => {
+  const calculateExperience = () => {
+    const currentYear = new Date().getFullYear();
+    const startYear = 2019;
+    return currentYear - startYear;
+  }
+
   return (
     <section id='about'>
       <h5>Faire Connaissance</h5>
@@ -22,7 +28,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className='about_icon'/>
               <h5>Experience</h5>
-              <small>3 ans de pratique</small>
+              <small>{calculateExperience()} ans de pratique</small>
             </article>
             <article className="about__card">
               <FiUsers className='about_icon'/>

@@ -26,21 +26,24 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: IMG4,
-      title: 'WeTravel - Agence de voyages',
-      demo: 'https://www.florianbouclet.go.yj.fr/',
-      technologies: [{name: "WordPress", icon: <SiWordpress className='icon wp-icon' />}],
+      image: IMG7,
+      title: "theSmartIDE - Editeur de code en ligne",
+      demo: "https://the-smart-ide.netlify.app/",
+      technologies: [
+        {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
+        {name: "Redux", icon: <SiRedux className='icon redux-icon' />}
+      ],
       showTechnologies: false
     },
     {
       id: 3,
-      image: IMG7,
-      title: "theSmartIDE - Editeur de code en ligne",
-      demo: 'https://the-smart-ide.netlify.app/',
+      image: IMG5,
+      title: 'Application E-commerce avec panier dynamique',
+      demo: 'https://ecommerce-bouclet.netlify.app/',
       technologies: [
         {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
         {name: "Redux", icon: <SiRedux className='icon redux-icon' />}
-    ],
+      ],
       showTechnologies: false
     },
     {
@@ -63,10 +66,10 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      image: IMG5,
-      title: 'Projet entrainement e-commerce en réalisation avec VueJS',
-      demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-      technologies: [{name: "VueJS", icon: <FaVuejs className='icon vue-icon' />}],
+      image: IMG4,
+      title: 'WeTravel - Agence de voyages',
+      demo: 'https://www.florianbouclet.go.yj.fr/',
+      technologies: [{name: "WordPress", icon: <SiWordpress className='icon wp-icon' />}],
       showTechnologies: false
     },
     {
@@ -80,8 +83,12 @@ const Portfolio = () => {
         {name: "JavaScript", icon: <SiJavascript className='icon js-icon'/>},
       ],
       showTechnologies: false
-    },
+    }
   ]);
+
+  const [displayedProjects, setDisplayedProjects] = useState(6);
+
+  const displayedProjectsData = projects.slice(0, displayedProjects);
 
   function handleTechnologiesClick(projectId) {
     setProjects((prevState) =>
@@ -93,14 +100,13 @@ const Portfolio = () => {
     );
   }
 
-
   return (
     <section id='portfolio'>
       <h5>Mes projets</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {projects.map((project) => (
+        {displayedProjectsData.map((project) => (
           <article key={project.id} className='portfolio__item'>
             <div className='portfolio__item-image'>
               <img src={project.image} alt={project.title} />
@@ -124,7 +130,16 @@ const Portfolio = () => {
           </article>
         ))
         }
+
       </div>
+        {projects.length > displayedProjects && (
+          <button 
+            className="btn__load-more" 
+            onClick={() => setDisplayedProjects((prev) => prev + 6)}
+          >
+            Afficher plus de projets
+          </button>
+        )}
     </section>
   )
 }
