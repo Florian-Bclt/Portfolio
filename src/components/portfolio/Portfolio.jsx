@@ -9,6 +9,7 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/dice-roll.png'
 import IMG7 from '../../assets/ide.jpg'
+import IMG8 from '../../assets/radiuszoom.png'
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([
@@ -54,8 +55,28 @@ const Portfolio = () => {
       technologies: [{name: "ReactJS", icon: <SiReact className='icon react-icon' />}],
       showTechnologies: false
     },
-    {  
+    {
       id: 5,
+      image: IMG4,
+      title: 'WeTravel - Agence de voyages',
+      demo: 'https://www.florianbouclet.go.yj.fr/',
+      technologies: [{name: "WordPress", icon: <SiWordpress className='icon wp-icon' />}],
+      showTechnologies: false
+    },
+    {
+      id: 6,
+      image: IMG8,
+      title: 'RadiusZoom - Curseur photo au survol',
+      demo: 'https://radiuszoom.netlify.app//',
+      technologies: [
+        {name: "HTML", icon: <SiHtml5 className='icon html-icon'/>}, 
+        {name: "CSS", icon: <SiCss3 className='icon css-icon' />},
+        {name: "JavaScript", icon: <SiJavascript className='icon js-icon'/>},
+      ],
+      showTechnologies: false
+    },
+    {  
+      id: 7,
       image: IMG1,
       title: "Music'en Bray - Site associatif d'une école de musique",
       demo: 'https://music-en-bray.netlify.app/',
@@ -65,15 +86,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 6,
-      image: IMG4,
-      title: 'WeTravel - Agence de voyages',
-      demo: 'https://www.florianbouclet.go.yj.fr/',
-      technologies: [{name: "WordPress", icon: <SiWordpress className='icon wp-icon' />}],
-      showTechnologies: false
-    },
-    {
-      id: 7,
+      id: 8,
       image: IMG6,
       title: 'Projet Studi - Mini jeu de dés à partir d\'une maquette',
       demo: 'https://dice-roll-project.netlify.app/',
