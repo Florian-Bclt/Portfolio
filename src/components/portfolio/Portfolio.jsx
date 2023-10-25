@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {SiReact, SiNestjs, SiGraphql, SiWordpress, SiHtml5, SiCss3, SiJavascript, SiRedux} from 'react-icons/si'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.png'
