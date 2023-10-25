@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {SiReact, SiNestjs, SiGraphql, SiWordpress, SiHtml5, SiCss3, SiJavascript, SiRedux} from 'react-icons/si'
-import {FaVuejs} from 'react-icons/fa'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.png'
@@ -10,6 +9,7 @@ import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/dice-roll.png'
 import IMG7 from '../../assets/ide.jpg'
 import IMG8 from '../../assets/radiuszoom.png'
+import images from '../../constants/images'
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([
@@ -19,9 +19,12 @@ const Portfolio = () => {
       title: "Quai Antique - Site de restauration",
       demo: 'https://quai-antique.netlify.app/',
       technologies: [
-        {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
-        {name: "NestJS", icon: <SiNestjs className='icon nest-icon' />},
-        {name: "GraphQL", icon: <SiGraphql className='icon graphql-icon' />},
+        {name: "ReactJS", icon: images.react},
+        {name: "CSS", icon: images.css},
+        {name: "Docker", icon: images.docker},
+        {name: "NestJS", icon: images.nest},
+        {name: "GraphQL", icon: images.graphql},
+        {name: "Postgers", icon: images.postgres},
       ],
       showTechnologies: false
     },
@@ -31,8 +34,9 @@ const Portfolio = () => {
       title: "theSmartIDE - Editeur de code en ligne",
       demo: "https://the-smart-ide.netlify.app/",
       technologies: [
-        {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
-        {name: "Redux", icon: <SiRedux className='icon redux-icon' />}
+        {name: "ViteJS", icon: images.vite},
+        {name: "Redux", icon: images.redux},
+        {name: "Tailwind", icon: images.tailwind},
       ],
       showTechnologies: false
     },
@@ -42,8 +46,9 @@ const Portfolio = () => {
       title: 'Application E-commerce avec panier dynamique',
       demo: 'https://ecommerce-bouclet.netlify.app/',
       technologies: [
-        {name: "ReactJS", icon: <SiReact className='icon react-icon' />},
-        {name: "Redux", icon: <SiRedux className='icon redux-icon' />}
+        {name: "ViteJS", icon: images.vite},
+        {name: "Redux", icon: images.redux},
+        {name: "Tailwind", icon: images.tailwind}
       ],
       showTechnologies: false
     },
@@ -52,7 +57,11 @@ const Portfolio = () => {
       image: IMG2,
       title: "Admin-Fit - Dashboard de gestion d'utilisateurs",
       demo: 'https://adminfit.netlify.app/',
-      technologies: [{name: "ReactJS", icon: <SiReact className='icon react-icon' />}],
+      technologies: [
+        {name: "ReactJS", icon: images.react},
+        {name: "CSS", icon: images.css},
+        {name: "NodeJS", icon: images.node}
+      ],
       showTechnologies: false
     },
     {
@@ -60,7 +69,11 @@ const Portfolio = () => {
       image: IMG4,
       title: 'WeTravel - Agence de voyages',
       demo: 'https://www.florianbouclet.go.yj.fr/',
-      technologies: [{name: "WordPress", icon: <SiWordpress className='icon wp-icon' />}],
+      technologies: [
+        {name: '', icon: ''},
+        {name: "WordPress", icon: images.wordpress},
+        {name: '', icon: ''},
+      ],
       showTechnologies: false
     },
     {
@@ -69,9 +82,9 @@ const Portfolio = () => {
       title: 'RadiusZoom - Curseur photo au survol',
       demo: 'https://radiuszoom.netlify.app//',
       technologies: [
-        {name: "HTML", icon: <SiHtml5 className='icon html-icon'/>}, 
-        {name: "CSS", icon: <SiCss3 className='icon css-icon' />},
-        {name: "JavaScript", icon: <SiJavascript className='icon js-icon'/>},
+        {name: "HTML", icon: images.html}, 
+        {name: "CSS", icon: images.css},
+        {name: "JavaScript", icon: images.js},
       ],
       showTechnologies: false
     },
@@ -81,8 +94,10 @@ const Portfolio = () => {
       title: "Music'en Bray - Site associatif d'une école de musique",
       demo: 'https://music-en-bray.netlify.app/',
       technologies: [
-        {name: "HTML", icon: <SiHtml5 className='icon html-icon'/>}, 
-        {name: "CSS", icon: <SiCss3 className='icon css-icon' />}],
+        {name: "HTML", icon: images.html}, 
+        {name: "", icon: ""}, 
+        {name: "Boostrap", icon: images.boostrap}
+      ],
       showTechnologies: false
     },
     {
@@ -91,9 +106,9 @@ const Portfolio = () => {
       title: 'Projet Studi - Mini jeu de dés à partir d\'une maquette',
       demo: 'https://dice-roll-project.netlify.app/',
       technologies: [
-        {name: "HTML", icon: <SiHtml5 className='icon html-icon'/>}, 
-        {name: "CSS", icon: <SiCss3 className='icon css-icon' />},
-        {name: "JavaScript", icon: <SiJavascript className='icon js-icon'/>},
+        {name: "HTML", icon: images.html}, 
+        {name: "CSS", icon: images.css},
+        {name: "JavaScript", icon: images.js},
       ],
       showTechnologies: false
     }
@@ -128,7 +143,7 @@ const Portfolio = () => {
               <ul className='project__techno'>
                 {project.technologies.map((technology) => (
                   <li key={technology.name}>
-                    {technology.icon}
+                    <img  src={technology.icon} alt={technology.name} className='icon'/>
                     {technology.name}
                   </li>
                 ))}

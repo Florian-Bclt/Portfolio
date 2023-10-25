@@ -36,7 +36,11 @@
 
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
-  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10rem;
 }
 
 .portfolio__item-cta {
@@ -89,53 +93,20 @@
 
 .portfolio__item .project__techno {
   margin: 1.2rem 0 2rem;
-  height: 6rem;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.portfolio__item .project__techno li {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .icon {
-  font-size: 1.2rem;
-  margin-right: 5px;
-}
-
-.react-icon {
-  color: cyan;
-}
-
-.nest-icon {
-  color: red;
-}
-
-.graphql-icon {
-  color: blueviolet;
-}
-
-.wp-icon {
-  color: light;
-  background-color: black;
-  border-radius: 50%;
-}
-
-.html-icon {
-  color: rgb(179, 69, 29);
-}
-
-.css-icon {
-  color:darkcyan;
-}
-
-.vue-icon {
-  color:green;
-}
-
-.js-icon {
-  color:yellow;
-}
-
-.redux-icon {
-  color:blueviolet;
+  width: 3rem;
 }
 
 
