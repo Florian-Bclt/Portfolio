@@ -15,7 +15,6 @@ const Footer = () => {
         <li><a href="#experience">Mon expérience</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Témoignages</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -27,9 +26,10 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Bouclet Florian - Portfolio. Tous droits réservés</small>
+        <small>&copy; Bouclet Florian - Portfolio.</small>
       </div>
     </footer>
+
   )
 }
 
