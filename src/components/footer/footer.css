@@ -1,5 +1,6 @@
 footer {
   background: var(--color-primary);
+  box-shadow: var(--color-primary) 2px 2px 20px;
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;

@@ -23,6 +23,8 @@
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+
+  --box-shaddow:var(--color-primary) 2px 2px 10px;
 }
 
 html {
@@ -65,19 +67,16 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--color-bg);
+  background: radial-gradient(#2c2c6c 40%, #1f1f38 70%);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: 
-    url(../src/assets/bg-texture.png);
-  animation: scrollBackground 500s linear infinite;
 }
 
 /* ============== GENERAL STYLES =============== */
 
 .container {
   width: var(--container-width-lg);
-  margin: 0 auto;
+  margin: 0 auto;;
 }
 
 h1, h2, h3, h4, h5 {
@@ -96,6 +95,7 @@ section > h2,
 section > h5 {
   text-align: center;
   color: var(--color-light);
+  
 }
 
 section > h2 {
@@ -124,6 +124,7 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
+  box-shadow: var(--box-shaddow);
   transition: var(--transition);
 }
 

@@ -15,6 +15,7 @@
     transparent);
     display: grid;
     place-items: center;
+    
 }
 
 .about__me-image {
@@ -35,18 +36,19 @@
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  background: var(--color-bg);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  box-shadow: var(--box-shaddow);
 }
 
 .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
+  cursor:default;
 }
 
 .about__icon {

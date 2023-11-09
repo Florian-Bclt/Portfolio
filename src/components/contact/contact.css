@@ -12,7 +12,8 @@
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
+  background: var(--color-bg);
+  box-shadow: var(--box-shaddow);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
