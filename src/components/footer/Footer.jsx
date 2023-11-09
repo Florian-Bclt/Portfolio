@@ -6,7 +6,7 @@ import {FiDribbble} from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer data-aos="fade-in">
       <a href="#" className='footer__logo'>Bouclet Florian - Développeur web</a>
 
       <ul className='permalinks'>

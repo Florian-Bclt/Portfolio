@@ -9,6 +9,10 @@ import IMG6 from '../../assets/dice-roll.png'
 import IMG7 from '../../assets/ide.jpg'
 import IMG8 from '../../assets/radiuszoom.png'
 import images from '../../constants/images'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+AOS.init();
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([
@@ -129,12 +133,12 @@ const Portfolio = () => {
 
   return (
     <section id='portfolio'>
-      <h5>Mes projets</h5>
-      <h2>Portfolio</h2>
+      <h5 data-aos="fade-in">Mes projets</h5>
+      <h2 data-aos="fade-in" data-aos-duration="3000">Portfolio</h2>
 
       <div className="container portfolio__container">
         {displayedProjectsData.map((project) => (
-          <article key={project.id} className='portfolio__item'>
+          <article key={project.id} className='portfolio__item' data-aos="zoom-in" data-aos-duration="1000">
             <div className='portfolio__item-image'>
               <img src={project.image} alt={project.title} />
             </div>
