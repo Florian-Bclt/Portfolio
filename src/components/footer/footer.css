@@ -53,6 +53,47 @@ footer a {
   color: var(--color-bg);
 }
 
+/* ============== MODAL =============== */
+
+.modal {
+  display: block; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  position: absolute;
+  max-width: 50vw;
+  max-height: 75vh; /* taille de la modal */
+  overflow-y: auto; /* ajout de la barre de scroll */
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-bg);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--color-primary) 2px 2px 30px;
+}
+
+.close {
+  position: fixed;
+  top: 5%;
+  right: 27%;
+  font-size: 3em;
+  color: var(--color-primary);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.close:hover {
+  color: var(--color-white);
+  transition: 0.3s ease-in;
+}
+
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============== */
 
 @media screen and (max-width: 600px) {
@@ -63,5 +104,10 @@ footer a {
 
   .footer__socials {
     margin-bottom: 2.6rem;
+  }
+
+  .modal-content {
+    width: 95vw;
+    font-size: 0.7em;
   }
 }

@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './footer.css'
 import { FaFacebook, FaGithub} from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
 import {FiDribbble} from 'react-icons/fi'
+import LegalNotice from '../LegalNotice/LegalNotice'
 
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleLegalNoticeClick = (e) => {
+    e.preventDefault();
+    setIsModalOpen(true);
+  };
+
   return (
     <footer data-aos="fade-in">
       <a href="#" className='footer__logo'>Bouclet Florian - Développeur web</a>
@@ -26,8 +34,17 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Bouclet Florian - Portfolio.</small>
+        <small>&copy; Bouclet Florian - Tous droits réservés - <a href='#' onClick={handleLegalNoticeClick} >Mentions légales</a>.</small>
       </div>
+
+      {isModalOpen && (
+        <div className="modal">
+          <span className="close" onClick={() => setIsModalOpen(false)}>&times;</span>
+          <div className="modal-content">
+            <LegalNotice />
+          </div>
+        </div>
+      )}
     </footer>
 
   )
