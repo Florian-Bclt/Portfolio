@@ -68,6 +68,10 @@ header {
   background: var(--color-primary);
 }
 
+.social-icon {
+  height: 1.1em;
+}
+
 /* ================== ME ================== */
 
 .me {

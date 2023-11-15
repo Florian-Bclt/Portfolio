@@ -4,6 +4,9 @@ import docker from '../assets/docker.png'
 import graphql from '../assets/graphql.png'
 import html from '../assets/html.png'
 import js from '../assets/js.png'
+import malt from '../assets/malt.png'
+import maltBlack from '../assets/malt-black.png'
+import maltVariant from '../assets/malt-variant.png'
 import mysql from '../assets/mysql.png'
 import nest from '../assets/nest.png'
 import node from '../assets/node.png'
@@ -21,6 +24,9 @@ export default {
   graphql,
   html,
   js,
+  malt,
+  maltBlack,
+  maltVariant,
   mysql,
   nest,
   node,

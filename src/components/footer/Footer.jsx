@@ -4,6 +4,7 @@ import { FaFacebook, FaGithub} from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
 import {FiDribbble} from 'react-icons/fi'
 import LegalNotice from '../LegalNotice/LegalNotice'
+import images from '../../constants/images'
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,6 +13,7 @@ const Footer = () => {
     e.preventDefault();
     setIsModalOpen(true);
   };
+  const [isHover, setIsHover] = useState(false);
 
   return (
     <footer data-aos="fade-in">
@@ -30,7 +32,16 @@ const Footer = () => {
         <a href="https://www.facebook.com/florian.bouclet.3" target='_blank' rel='noreferrer'><FaFacebook/></a>
         <a href='https://github.com/Florian-Bclt' target='_blank' rel='noreferrer'><FaGithub /></a>
         <a href="https://www.linkedin.com/in/florian-bouclet-7200071a7/" target='_blank' rel='noreferrer'><BsLinkedin /></a>
-        <a href='https://dribbble.com/Dwalum' target='_blank' rel='noreferrer'><FiDribbble /></a>
+        <a href='https://www.malt.fr/profile/florianbouclet' target='_blank' rel='noreferrer' 
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
+        {isHover ? (
+          <img src={images.maltBlack} className='social-icon'/>
+          ) : (
+          <img src={images.maltVariant} className='social-icon'/>
+        )}
+      </a>
       </div>
 
       <div className="footer__copyright">
