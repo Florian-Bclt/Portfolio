@@ -12,6 +12,7 @@ function LegalNotice() {
           dont le siège social est situé au
           <span> 163 route de Mauray,
           76680 Neufbosc<br /></span>
+          N° SIRET : <span>98146345800019</span>, N° TVA intracommunautaire : <span>FR06981463458</span><br />
           Tél. : <span>06 85 99 25 04</span><br />
           Email : <span>bouclet.florian@gmail.com</span>
         </p>

@@ -14,6 +14,7 @@ import postgres from '../assets/postgres.png'
 import react from '../assets/react.png'
 import redux from '../assets/redux.png'
 import tailwind from '../assets/tailwind.png'
+import unsplash from '../assets/unsplash.png'
 import vite from '../assets/vite.png'
 import wordpress from '../assets/wordpress.png'
 
@@ -34,6 +35,7 @@ export default {
   react,
   redux,
   tailwind,
+  unsplash,
   vite,
   wordpress
 }
