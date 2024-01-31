@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
-import {FiDribbble} from 'react-icons/fi'
 import images from '../../constants/images'
 
 const HearderSocials = () => {
