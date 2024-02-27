@@ -3,12 +3,12 @@
   "name": "Bouclet Florian",
   "icons": [
     {
-      "src": "/path/to/icon-mobile.png",
+      "src": "/icon-mobile.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/path/to/logo-fb.png",
+      "src": "/logo-fb.png",
       "type": "image/png",
       "sizes": "512x512"
     }
