@@ -1,0 +1,20 @@
+{
+  "short_name": "B. Florian",
+  "name": "Bouclet Florian",
+  "icons": [
+    {
+      "src": "/path/to/icon-mobile.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/path/to/logo-fb.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2c2c6c",
+  "background_color": "#1f1f38"
+}
