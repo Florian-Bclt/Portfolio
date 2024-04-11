@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './footer.css'
 import { FaFacebook, FaGithub} from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
-import {FiDribbble} from 'react-icons/fi'
+import LOGO from '../../assets/logo.png'
 import LegalNotice from '../LegalNotice/LegalNotice'
 import images from '../../constants/images'
 
@@ -17,13 +17,13 @@ const Footer = () => {
 
   return (
     <footer data-aos="fade-in">
-      <a href="#" className='footer__logo'>Bouclet Florian - Développeur web</a>
+      <a href="#" className='footer__logo'>Société Florian Bouclet</a>
 
       <ul className='permalinks'>
         <li><a href="#">Accueil</a></li>
         <li><a href="#about">A propos de moi</a></li>
-        <li><a href="#experience">Mon expérience</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#tarifs">Mes prestations</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Bouclet Florian - Tous droits réservés - <a href='#' onClick={handleLegalNoticeClick} >Mentions légales</a>.</small>
+        <small>&copy; Bouclet Florian - Tous droits réservés - <a href='#' onClick={handleLegalNoticeClick} >Mentions légales</a> - CGV</small>
       </div>
 
       {isModalOpen && (

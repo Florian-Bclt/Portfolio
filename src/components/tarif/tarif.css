@@ -103,4 +103,14 @@
     width: 100%;
     padding: 2rem 1rem;
   }
+
+  .tarif__details h4 {
+    font-size: smaller;
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }
