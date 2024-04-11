@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/me-about1.jpg'
+import LOGO from '../../assets/logo.png'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
@@ -24,47 +25,17 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me" data-aos="zoom-in">
           <div className="about__me-image" >
-            <img src={ME} alt='profil'/>
+            <img src={LOGO} alt='logo'/>
           </div>
         </div>
         <div className="about__content">
-          <div className="about__cards">
-            <article
-              className="about__card" 
-              data-aos="flip-up" 
-              data-aos-delay="800"
-              data-aos-duration="1200"
-            >
-              <FaAward className='about_icon'/>
-              <h5>Experience</h5>
-              <small>{calculateExperience()} ans de pratique</small>
-            </article>
-            <article
-              className="about__card" 
-              data-aos="flip-up" 
-              data-aos-delay="1000"
-              data-aos-duration="1200"
-            >
-              <FiUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>5+ clients</small>
-            </article>
-            <article
-              className="about__card" 
-              data-aos="flip-up" 
-              data-aos-delay="1200"
-              data-aos-duration="1200"
-            >
-              <VscFolderLibrary className='about_icon'/>
-              <h5>Projets</h5>
-              <small>10+ réalisés</small>
-            </article>
-          </div>
-
           <p data-aos="fade-up" data-aos-duration="3000" >
-            Spécialisé en développement frontend, c'est avec rigueur et enthousiasme que je vous accompagnerai dans vos projets
-            personnels selon vos besoins et vos attentes. <br />
-            Création ou mise à jour d'application web ? <br />
+            Spécialisé en développement frontend, je porte toute mon attention sur l'<b>expérience utilisateur</b> en développant des sites fonctionnels, responsive, multiplateforme et dynamique !
+          </p>
+          <p data-aos="fade-up" data-aos-duration="3000" >
+           Issu d'une reconversion professionnel, j'ai commencé ma vie active par 10 ans d'expérience en tant qu'infirmier. Aujourd'hui
+           c'est avec la même rigueur que j'écoute et adapte <b>mes Services</b> à <b>vos besoins</b>. Tout comme les humains, un site a besoin d'être soigné. <br/><br />
+            Création, mise à jour d'application web, ajout de fonctionnalité ? <br />
             <b>Vous êtes au bon endroit !</b>
           </p>
 

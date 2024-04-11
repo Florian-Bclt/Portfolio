@@ -1,0 +1,106 @@
+.info {
+  display: flex;
+  justify-content: right;
+  margin-right: 15em;
+  margin-top: 1em;
+}
+.tarif__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.tarif__container > div {
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.tarif__container h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border-bottom: 1px solid var(--color-light);
+}
+
+.price h6 {
+  margin-top: 2em;
+}
+
+.tarif__container span {
+  color: var(--color-primary)
+}
+
+.tarif__static, .tarif__fullstack {
+  background: var(--color-bg);
+  border-color: var(--color-logo);
+  box-shadow: var(--box-shaddow-variant);
+  cursor: default;
+}
+
+.tarif__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.tarif__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarif__details-icon {
+  margin-right: 1em;
+}
+
+.tarif__details h4.active {
+  font-weight: 300;
+  color: var(--color-primary);
+}
+.tarif__details h4.disable {
+  font-weight: 300;
+  color: var(--color-light);
+}
+.tarif__details h4.prenium {
+  font-weight: 300;
+  color: var(--color-logo);
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+
+@media screen and (max-width: 1024px) {
+  .tarif__container {
+    grid-template-columns: 1fr;
+  }
+
+  .tarif__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .tarif__content {
+    padding: 1rem;
+  }
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) =============== */
+
+@media screen and (max-width: 600px) {
+  .tarif__container {
+    gap: 1rem;
+  }
+
+  .tarif__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}

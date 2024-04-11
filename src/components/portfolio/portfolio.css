@@ -66,9 +66,10 @@
 }
 
 .btn__techno:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
+  background: transparent;
+  color: var(--color-logo);
   border-color: transparent;
+  box-shadow: var(--box-shaddow-variant);
 }
 
 .btn__load-more {
