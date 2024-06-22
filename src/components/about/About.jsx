@@ -1,21 +1,12 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about1.jpg'
 import LOGO from '../../assets/logo.png'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 AOS.init();
 
 const About = () => {
-  const calculateExperience = () => {
-    const currentYear = new Date().getFullYear();
-    const startYear = 2019;
-    return currentYear - startYear;
-  }
 
   return (
     <section id='about'>

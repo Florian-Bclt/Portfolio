@@ -1,10 +1,9 @@
-.services__containers {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+.cgv h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
 }
-
-.services__container {
+.cgv__container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -12,47 +11,31 @@
   padding: 1em;
 }
 
-.services__container h1 {
+.cgv__container h1 {
   font-weight: bold;
   background: -webkit-linear-gradient(var(--color-primary), var(--color-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.services__container-cta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.services__container-cta span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.services__container-cta .btn {
-  margin: 1em;
-}
-
-.services__list {
+.cgv__list {
   background: var(--color-bg);
   box-shadow: var(--box-shaddow);
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
-  margin: 1em;
-  text-align: left;
+  margin: 0.5em;
+  text-align: justify;
 }
 
-.services__list:hover {
+.cgv__list:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.services__list h2 {
+.cgv__list h2 {
   color: var(--color-primary);
   display: flex;
   align-items: center;
@@ -60,47 +43,44 @@
   cursor: pointer;
 }
 
-.services__list h2 svg {
+.cgv__list h2 svg {
   margin-left: 0.5rem;
   color: var(--color-primary-variant);
+}
+
+.cgv__list p {
+  margin-bottom: 10px;
+  font-size: 0.9em;
 }
 
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============== */
 
 @media screen and (max-width: 1200px) {
-  .services__containers {
-    grid-template-columns: 1fr;
-  }
-
-  .services__container h1 {
+  .cgv__container h1 {
     margin-bottom: 1em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .services__containers {
-    grid-template-columns: 1fr;
-  }
-
-  .services__container h1 {
+  .cgv__container h1 {
     font-size: 2em;
     margin-bottom: 1em;
   }
 
-  .services__container h2 {
+  .cgv__container h2 {
     font-size: 1em;
   }
 
-  .services__container h3 {
+  .cgv__container h3 {
     font-size: 0.9em;
   }
 
-  .services__list {
+  .cgv__list {
     padding: 2em 2em;
   }
 
-  .services__list p {
+  .cgv__list p {
     font-size: 0.8em;
   }
 }

@@ -17,6 +17,7 @@ import tailwind from '../assets/tailwind.png'
 import unsplash from '../assets/unsplash.png'
 import vite from '../assets/vite.png'
 import wordpress from '../assets/wordpress.png'
+import lorichalque from '../assets/lorichalque.png'
 
 export default {
   boostrap,
@@ -37,5 +38,6 @@ export default {
   tailwind,
   unsplash,
   vite,
-  wordpress
+  wordpress,
+  lorichalque
 }

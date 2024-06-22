@@ -20,6 +20,18 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
+      image: images.lorichalque,
+      title: "L'Orichalque Mangas - Boutique de jeux",
+      demo: "https://lorichalque.com//",
+      technologies: [
+        {name: "ViteJS", icon: images.vite},
+        {},
+        {name: "CSS", icon: images.css},
+      ],
+      showTechnologies: false
+    },
+    {
+      id: 1,
       image: UNSPLASH,
       title: "Unsplash Clone - Recherchez vos plus belles photos",
       demo: "https://bouclet-unsplash-clone.netlify.app/",

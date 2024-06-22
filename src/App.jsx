@@ -7,18 +7,27 @@ import Tarif from './components/tarif/Tarif'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import CGV from './pages/CGV'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <>
-        <Header/>
-        <Nav/>
-        <About/>
-        <Services />
-        <Tarif />
-        <Portfolio />
-        <Contact />
-        <Footer />
+      <Nav/>
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Header/>
+            <About/>
+            <Services />
+            <Tarif />
+            <Portfolio />
+            <Contact />
+            <Footer />
+          </>
+        } />
+        <Route path='/cgv' element={<CGV />} />
+      </Routes>
     </>
   )
 }
