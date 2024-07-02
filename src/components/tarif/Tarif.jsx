@@ -47,7 +47,7 @@ const Tarif = () => {
               <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Reponsive mobile & tablette</h4>
               <h5>Les plus :</h5>
               <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Possibilité d'utilisation d'un CMS</h4>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Optisation SEO avancée</h4>
+              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Optimisation SEO avancée</h4>
               <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Application e-commerce, e-learning</h4>
               <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Espace personnel</h4>
               <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Gestion de données</h4>
