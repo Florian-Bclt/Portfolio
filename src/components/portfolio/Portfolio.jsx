@@ -31,7 +31,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 1,
+      id: 2,
       image: UNSPLASH,
       title: "Unsplash Clone - Recherchez vos plus belles photos",
       demo: "https://bouclet-unsplash-clone.netlify.app/",
@@ -43,7 +43,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 2,
+      id: 3,
       image: IMG3,
       title: "Quai Antique - Découvrez nos plus belles saveurs",
       demo: 'https://quai-antique.netlify.app/',
@@ -58,7 +58,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 3,
+      id: 4,
       image: IMG7,
       title: "theSmartIDE - Editeur de code en ligne",
       demo: "https://the-smart-ide.netlify.app/",
@@ -70,7 +70,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 4,
+      id: 5,
       image: IMG5,
       title: 'Application E-commerce avec panier dynamique',
       demo: 'https://ecommerce-bouclet.netlify.app/',
@@ -82,7 +82,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 5,
+      id: 6,
       image: IMG2,
       title: "Admin-Fit - Gérez les partenaires de votre salle de sport",
       demo: 'https://adminfit.netlify.app/',
@@ -94,7 +94,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 6,
+      id: 7,
       image: IMG4,
       title: "WeTravel - Voyager n'a jamais été aussi important",
       demo: 'https://www.florianbouclet.go.yj.fr/',
@@ -106,7 +106,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 7,
+      id: 8,
       image: IMG9,
       title: "Podomoro - Optimisez vos sessions de sport",
       demo: "https://bouclet-podomoro.netlify.app/",
@@ -118,7 +118,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 8,
+      id: 9,
       image: IMG8,
       title: "RadiusZoom - Survolez vos capitales en un clin d'oeil !",
       demo: 'https://radiuszoom.netlify.app//',
@@ -130,7 +130,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {  
-      id: 9,
+      id: 10,
       image: IMG1,
       title: "Music'en Bray - Site associatif d'une école de musique",
       demo: 'https://music-en-bray.netlify.app/',
@@ -142,7 +142,7 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
-      id: 10,
+      id: 11,
       image: IMG6,
       title: 'Projet Studi - Mini jeu de dés, Attention risque d\'addiction !',
       demo: 'https://dice-roll-project.netlify.app/',
