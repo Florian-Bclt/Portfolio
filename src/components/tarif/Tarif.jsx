@@ -47,35 +47,6 @@ const Tarif = () => {
             <Link to='/webmaster'><button className='btn btn-primary'>Nos tarifs</button></Link>
           </div>         
         </div>
-<<<<<<< HEAD
-=======
-
-        <div className="tarif__fullstack" data-aos="zoom-in-left">
-          <h2>Application complète</h2>
-          <div className="price">
-            <h6>à partir de</h6>
-            <h1>1500€ H.T<span>*</span></h1>
-          </div>
-            <div className="tarif__content">
-            
-            <article className='tarif__details'>
-              <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Audit personnalisé</h4>
-              <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Proposition de design</h4>
-              <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Définition du cahier des charges</h4>
-              <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Création d'un site monopage (SPA)</h4>
-              <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Illustration & icons</h4>
-              <h4 className='active'><BsPatchCheckFill className='tarif__details-icon'/>Reponsive mobile & tablette</h4>
-              <h5>Les plus :</h5>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Possibilité d'utilisation d'un CMS</h4>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Optimisation SEO avancée</h4>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Application e-commerce, e-learning</h4>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Espace personnel</h4>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Gestion de données</h4>
-              <h4 className='prenium'><BsPatchPlusFill className='tarif__details-icon'/>Modification autonome</h4>
-            </article>
-            </div>
-          </div>
->>>>>>> c30dee93faac45806923c2083ba6dcd513d55a48
       </div>
     </section>
   )
