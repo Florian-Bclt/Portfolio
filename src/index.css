@@ -144,6 +144,12 @@ a:hover {
   color: var(--color-bg);
 }
 
+.btn-variant {
+  background: none;
+  color: var(--color-primary);
+  border: none;
+}
+
 img {
   display: block;
   width: 100%;

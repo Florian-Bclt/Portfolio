@@ -18,14 +18,21 @@ import unsplash from '../assets/unsplash.png'
 import vite from '../assets/vite.png'
 import wordpress from '../assets/wordpress.png'
 import lorichalque from '../assets/lorichalque.png'
+import vitrine from '../assets/vitrine.png'
+import dev from '../assets/dev.jpg'
+import maintenance from '../assets/maintenance.jpg'
+import dynamique from '../assets/dynamique.png'
 
 export default {
   boostrap,
   css,
+  dev,
+  dynamique,
   docker,
   graphql,
   html,
   js,
+  maintenance,
   malt,
   maltBlack,
   maltVariant,
@@ -38,6 +45,7 @@ export default {
   tailwind,
   unsplash,
   vite,
+  vitrine,
   wordpress,
   lorichalque
 }

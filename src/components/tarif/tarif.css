@@ -6,7 +6,7 @@
 }
 .tarif__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
 }
 
@@ -44,6 +44,34 @@
   border-color: var(--color-logo);
   box-shadow: var(--box-shaddow-variant);
   cursor: default;
+}
+
+.tarif__static {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.tarif__static > img {
+  width: 50%;
+  height: 80%;
+  border-radius: 0.5em;
+}
+
+.tarif__static__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 15em;
+  height: auto;
+  padding-left: 2em;
+}
+
+.tarif__static__desc > p {
+  margin: 1.5em 0;
+  text-align: justify;
 }
 
 .tarif__container > div h3 {
@@ -90,6 +118,21 @@
   .tarif__content {
     padding: 1rem;
   }
+
+  .tarif__container .tarif__static {
+    margin: 0;
+    width: 100%;
+  }
+  .tarif__container .tarif__static > img{
+    width: 40%;
+    height: auto;
+  }
+
+  .tarif__static__desc {
+    height: auto;
+  }
+
+
 }
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============== */
@@ -112,5 +155,165 @@
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+  .tarif__container .tarif__static {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  .tarif__static > img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .tarif__static__desc {
+    padding: 0.5em;
+    height: max-content;
+  }
+  .tarif__static__desc > h2,
+  .tarif__static__desc > a {
+    margin: auto;
+  }
+}
+
+/* ============== page détails prestation =============== */
+.vitrine__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vitrine__info > .tarif__static__desc > h2 {
+  color: var(--color-primary);
+}
+.vitrine__info > .tarif__static__desc > h4 {
+  margin-left: 10px;
+  margin-top: 1em;
+  padding-left: 1em;
+  border-left: 3px solid var(--color-primary)
+}
+
+.vitrine__info > img {
+  width: 40%;
+  border-radius: 0.5em;
+}
+.options__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.options__container > .tarif__content {
+  padding: 1em;
+}
+.options__container > .tarif__content > h2 {
+  margin-left: 10px;
+  padding-left: 1em;
+  border-left: 3px solid var(--color-primary)
+}
+.options__container > .tarif__content > article {
+  margin-left: 2.5em;
+  margin-top: 10px;
+  margin-right: 5em;
+}
+
+.maintenance, .development {
+  width: 20em;
+  height: auto;
+  background-image: url('../../assets/maintenance.jpg');
+  background-size: cover;
+  background-repeat: none;
+}
+
+.development {
+  background-image: url('../../assets/dev.jpg');
+}
+
+.maintenance > a,
+.development > a {
+  color: white;
+}
+
+.maintenance > a:hover > .options__content > span,
+.development > a:hover > .options__content > span {
+  background-color: var(--color-logo);
+  transition: var(--transition);
+}
+
+.options__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em 0 0 2em;
+  background: rgba(0, 0, 0, 60%);
+  cursor: pointer;
+}
+
+.options__content > span {
+  background-color: aqua;
+  width: 50px;
+  height: 2px;
+  margin: 0.5em 0;
+  z-index: 1;
+}
+
+.tarif__navigation > a > button {
+  margin-right: 1em;
+}
+
+/* ============== Responsive Device =============== */
+
+@media screen and (max-width: 1200px) {
+  .vitrine__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vitrine__info > img {
+    width: 70%;
+    height: auto;
+  }
+
+  .tarif__static__desc > h2 {
+    text-align: center;
+  }
+
+  .options__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .options__container > .tarif__content > article {
+    width: 100%;
+    margin-left: 8px;
+  }
+
+  .maintenance, .development {
+    margin: 0 1em ;
+  }
+  
+  .options__content {
+    padding: 4em 0 0em 2em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .options__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .maintenance, .development {
+    margin: 1em auto 0 auto;
+  }
+  
+  .options__content {
+    padding: 4em 0 1em 2em;
+  }
+
+  .tarif__navigation > a > button {
+    margin-bottom: 2em;
   }
 }

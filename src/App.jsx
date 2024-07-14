@@ -9,6 +9,10 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import CGV from './pages/CGV'
 import { Route, Routes } from 'react-router-dom'
+import Vitrine from './components/tarif/vitrine'
+import Maintenance from './components/tarif/Maintenance'
+import Webmaster from './components/tarif/Webmaster'
+import Dynamique from './components/tarif/Dynamique'
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
             <Footer />
           </>
         } />
+        <Route path='/vitrine' element={<Vitrine />} />
+        <Route path='/dynamique' element={<Dynamique />} />
+        <Route path='/maintenance' element={<Maintenance />} />
+        <Route path='/webmaster' element={<Webmaster />} />
         <Route path='/cgv' element={<CGV />} />
       </Routes>
     </>
