@@ -21,7 +21,11 @@ const About = () => {
         </div>
         <div className="about__content">
           <p data-aos="fade-up" data-aos-duration="3000" >
+<<<<<<< HEAD
             Spécialisé dans la création d'espace personnel, je porte toute mon attention sur l'<b>expérience utilisateur</b> en développant des sites fonctionnels, responsive, multiplateforme et dynamique !
+=======
+            Spécialisé dans la création d'espace personnel, je porte toute mon attention sur l'<b>expérience utilisateur</b> en développant des sites fonctionnels, qui s'adaptent à tous les écrans, multiplateforme et dynamique !
+>>>>>>> c30dee93faac45806923c2083ba6dcd513d55a48
           </p>
           <p data-aos="fade-up" data-aos-duration="3000" >
            Issu d'une reconversion professionnel, j'ai commencé ma vie active par 10 ans d'expérience en tant qu'infirmier. Aujourd'hui

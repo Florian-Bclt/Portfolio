@@ -118,7 +118,11 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
+<<<<<<< HEAD
       id: 10,
+=======
+      id: 9,
+>>>>>>> c30dee93faac45806923c2083ba6dcd513d55a48
       image: IMG8,
       title: "RadiusZoom - Survolez vos capitales en un clin d'oeil !",
       demo: 'https://radiuszoom.netlify.app//',
@@ -130,7 +134,11 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {  
+<<<<<<< HEAD
       id: 11,
+=======
+      id: 10,
+>>>>>>> c30dee93faac45806923c2083ba6dcd513d55a48
       image: IMG1,
       title: "Music'en Bray - Site associatif d'une école de musique",
       demo: 'https://music-en-bray.netlify.app/',
@@ -142,7 +150,11 @@ const Portfolio = () => {
       showTechnologies: false
     },
     {
+<<<<<<< HEAD
       id: 12,
+=======
+      id: 11,
+>>>>>>> c30dee93faac45806923c2083ba6dcd513d55a48
       image: IMG6,
       title: 'Projet Studi - Mini jeu de dés, Attention risque d\'addiction !',
       demo: 'https://dice-roll-project.netlify.app/',
