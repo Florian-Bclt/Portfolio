@@ -17,7 +17,7 @@ const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     try {
-      const result = await emailjs.sendForm('service_08k76hg', 'template_vi8jqxi', form.current, 'c9BlF0wItDrqYhC8l');
+      const result = await emailjs.sendForm('service_08k76hg', 'template_vi8jqxi', form.current, 'KFtqZAFKSYuhIQNOb');
 
       if (result) {
         setValidationMessage('Succès ! Message envoyé.');
