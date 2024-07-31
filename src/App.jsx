@@ -13,11 +13,13 @@ import Vitrine from './components/tarif/Vitrine'
 import Maintenance from './components/tarif/Maintenance'
 import Webmaster from './components/tarif/Webmaster'
 import Dynamique from './components/tarif/Dynamique'
+import ScrollToTop from './components/utils/ScrollToTop'
 
 function App() {
   return (
     <>
       <Nav/>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={
           <>

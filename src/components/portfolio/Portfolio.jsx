@@ -183,7 +183,7 @@ const Portfolio = () => {
             {project.showTechnologies ? (
               <ul className='project__techno'>
                 {project.technologies.map((technology) => (
-                  <li key={technology.name}>
+                  <li key={technology.id}> 
                     <img  src={technology.icon} alt={technology.name} className='icon'/>
                     {technology.name}
                   </li>
