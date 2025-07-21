@@ -9,6 +9,7 @@ import maltBlack from '../assets/malt-black.png'
 import maltVariant from '../assets/malt-variant.png'
 import mysql from '../assets/mysql.png'
 import nest from '../assets/nest.png'
+import next from '../assets/next.png'
 import node from '../assets/node.png'
 import postgres from '../assets/postgres.png'
 import react from '../assets/react.png'
@@ -38,6 +39,7 @@ export default {
   maltVariant,
   mysql,
   nest,
+  next,
   node,
   postgres,
   react,
